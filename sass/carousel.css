@@ -1,0 +1,338 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1E292F;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel {
+  max-width: 50rem;
+  height: 70rem;
+  margin: 0 auto;
+  position: relative;
+  -webkit-perspective: 50rem;
+          perspective: 50rem;
+}
+
+.carousel__slice {
+  width: 5rem;
+  height: 50rem;
+  position: absolute;
+  left: calc(50% - 2.5rem);
+  top: 10rem;
+  -webkit-transform-origin: center center -28rem;
+          transform-origin: center center -28rem;
+  background-size: cover, 5rem 5rem, 5rem 5rem, auto 40rem;
+  background-repeat: repeat-x, repeat-x, no-repeat;
+}
+
+.carousel__slice:nth-child(1) {
+  -webkit-transform: rotateY(-45deg);
+          transform: rotateY(-45deg);
+  background-position: -5rem center, top, bottom, -5rem center;
+  -webkit-animation: slide-1 10s infinite;
+          animation: slide-1 10s infinite;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#404040)), radial-gradient(transparent 40%, #393939 42%), radial-gradient(transparent 40%, #393939 42%), url(../image/img640x480-1.png);
+  background-image: linear-gradient(90deg, #333, #404040), radial-gradient(transparent 40%, #393939 42%), radial-gradient(transparent 40%, #393939 42%), url(../image/img640x480-1.png);
+  background-blend-mode: color-burn;
+}
+
+@-webkit-keyframes slide-1 {
+  from {
+    background-position: -5rem center, top, bottom, -5rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -55rem center;
+  }
+}
+
+@keyframes slide-1 {
+  from {
+    background-position: -5rem center, top, bottom, -5rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -55rem center;
+  }
+}
+
+.carousel__slice:nth-child(2) {
+  -webkit-transform: rotateY(-35deg);
+          transform: rotateY(-35deg);
+  background-position: -5rem center, top, bottom, -10rem center;
+  -webkit-animation: slide-2 10s infinite;
+          animation: slide-2 10s infinite;
+  background-image: -webkit-gradient(linear, left top, right top, from(#404040), to(#595959)), radial-gradient(transparent 40%, #525252 42%), radial-gradient(transparent 40%, #525252 42%), url(../image/img640x480-1.png);
+  background-image: linear-gradient(90deg, #404040, #595959), radial-gradient(transparent 40%, #525252 42%), radial-gradient(transparent 40%, #525252 42%), url(../image/img640x480-1.png);
+  background-blend-mode: color-burn;
+}
+
+@-webkit-keyframes slide-2 {
+  from {
+    background-position: -5rem center, top, bottom, -10rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -60rem center;
+  }
+}
+
+@keyframes slide-2 {
+  from {
+    background-position: -5rem center, top, bottom, -10rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -60rem center;
+  }
+}
+
+.carousel__slice:nth-child(3) {
+  -webkit-transform: rotateY(-25deg);
+          transform: rotateY(-25deg);
+  background-position: -5rem center, top, bottom, -15rem center;
+  -webkit-animation: slide-3 10s infinite;
+          animation: slide-3 10s infinite;
+  background-image: -webkit-gradient(linear, left top, right top, from(#595959), to(gray)), radial-gradient(transparent 40%, #6c6c6c 42%), radial-gradient(transparent 40%, #6c6c6c 42%), url(../image/img640x480-1.png);
+  background-image: linear-gradient(90deg, #595959, gray), radial-gradient(transparent 40%, #6c6c6c 42%), radial-gradient(transparent 40%, #6c6c6c 42%), url(../image/img640x480-1.png);
+  background-blend-mode: color-burn;
+}
+
+@-webkit-keyframes slide-3 {
+  from {
+    background-position: -5rem center, top, bottom, -15rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -65rem center;
+  }
+}
+
+@keyframes slide-3 {
+  from {
+    background-position: -5rem center, top, bottom, -15rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -65rem center;
+  }
+}
+
+.carousel__slice:nth-child(4) {
+  -webkit-transform: rotateY(-15deg);
+          transform: rotateY(-15deg);
+  background-position: -5rem center, top, bottom, -20rem center;
+  -webkit-animation: slide-4 10s infinite;
+          animation: slide-4 10s infinite;
+  background-image: -webkit-gradient(linear, left top, right top, from(gray), to(#b3b3b3)), radial-gradient(transparent 40%, #858585 42%), radial-gradient(transparent 40%, #858585 42%), url(../image/img640x480-1.png);
+  background-image: linear-gradient(90deg, gray, #b3b3b3), radial-gradient(transparent 40%, #858585 42%), radial-gradient(transparent 40%, #858585 42%), url(../image/img640x480-1.png);
+  background-blend-mode: color-burn;
+}
+
+@-webkit-keyframes slide-4 {
+  from {
+    background-position: -5rem center, top, bottom, -20rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -70rem center;
+  }
+}
+
+@keyframes slide-4 {
+  from {
+    background-position: -5rem center, top, bottom, -20rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -70rem center;
+  }
+}
+
+.carousel__slice:nth-child(5) {
+  -webkit-transform: rotateY(-5deg);
+          transform: rotateY(-5deg);
+  background-position: -5rem center, top, bottom, -25rem center;
+  -webkit-animation: slide-5 10s infinite;
+          animation: slide-5 10s infinite;
+  background-image: -webkit-gradient(linear, left top, right top, from(#b3b3b3), to(#f2f2f2)), radial-gradient(transparent 40%, #9f9f9f 42%), radial-gradient(transparent 40%, #9f9f9f 42%), url(../image/img640x480-1.png);
+  background-image: linear-gradient(90deg, #b3b3b3, #f2f2f2), radial-gradient(transparent 40%, #9f9f9f 42%), radial-gradient(transparent 40%, #9f9f9f 42%), url(../image/img640x480-1.png);
+  background-blend-mode: color-burn;
+}
+
+@-webkit-keyframes slide-5 {
+  from {
+    background-position: -5rem center, top, bottom, -25rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -75rem center;
+  }
+}
+
+@keyframes slide-5 {
+  from {
+    background-position: -5rem center, top, bottom, -25rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -75rem center;
+  }
+}
+
+.carousel__slice:nth-child(6) {
+  -webkit-transform: rotateY(5deg);
+          transform: rotateY(5deg);
+  background-position: -5rem center, top, bottom, -30rem center;
+  -webkit-animation: slide-6 10s infinite;
+          animation: slide-6 10s infinite;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f2f2f2), to(#e6e6e6)), radial-gradient(transparent 40%, #919191 42%), radial-gradient(transparent 40%, #919191 42%), url(../image/img640x480-1.png);
+  background-image: linear-gradient(90deg, #f2f2f2, #e6e6e6), radial-gradient(transparent 40%, #919191 42%), radial-gradient(transparent 40%, #919191 42%), url(../image/img640x480-1.png);
+  background-blend-mode: color-burn;
+}
+
+@-webkit-keyframes slide-6 {
+  from {
+    background-position: -5rem center, top, bottom, -30rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -80rem center;
+  }
+}
+
+@keyframes slide-6 {
+  from {
+    background-position: -5rem center, top, bottom, -30rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -80rem center;
+  }
+}
+
+.carousel__slice:nth-child(7) {
+  -webkit-transform: rotateY(15deg);
+          transform: rotateY(15deg);
+  background-position: -5rem center, top, bottom, -35rem center;
+  -webkit-animation: slide-7 10s infinite;
+          animation: slide-7 10s infinite;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#cccccc)), radial-gradient(transparent 40%, #777777 42%), radial-gradient(transparent 40%, #777777 42%), url(../image/img640x480-1.png);
+  background-image: linear-gradient(90deg, #e6e6e6, #cccccc), radial-gradient(transparent 40%, #777777 42%), radial-gradient(transparent 40%, #777777 42%), url(../image/img640x480-1.png);
+  background-blend-mode: color-burn;
+}
+
+@-webkit-keyframes slide-7 {
+  from {
+    background-position: -5rem center, top, bottom, -35rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -85rem center;
+  }
+}
+
+@keyframes slide-7 {
+  from {
+    background-position: -5rem center, top, bottom, -35rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -85rem center;
+  }
+}
+
+.carousel__slice:nth-child(8) {
+  -webkit-transform: rotateY(25deg);
+          transform: rotateY(25deg);
+  background-position: -5rem center, top, bottom, -40rem center;
+  -webkit-animation: slide-8 10s infinite;
+          animation: slide-8 10s infinite;
+  background-image: -webkit-gradient(linear, left top, right top, from(#cccccc), to(#a6a6a6)), radial-gradient(transparent 40%, #5e5e5e 42%), radial-gradient(transparent 40%, #5e5e5e 42%), url(../image/img640x480-1.png);
+  background-image: linear-gradient(90deg, #cccccc, #a6a6a6), radial-gradient(transparent 40%, #5e5e5e 42%), radial-gradient(transparent 40%, #5e5e5e 42%), url(../image/img640x480-1.png);
+  background-blend-mode: color-burn;
+}
+
+@-webkit-keyframes slide-8 {
+  from {
+    background-position: -5rem center, top, bottom, -40rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -90rem center;
+  }
+}
+
+@keyframes slide-8 {
+  from {
+    background-position: -5rem center, top, bottom, -40rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -90rem center;
+  }
+}
+
+.carousel__slice:nth-child(9) {
+  -webkit-transform: rotateY(35deg);
+          transform: rotateY(35deg);
+  background-position: -5rem center, top, bottom, -45rem center;
+  -webkit-animation: slide-9 10s infinite;
+          animation: slide-9 10s infinite;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a6a6a6), to(#737373)), radial-gradient(transparent 40%, #444444 42%), radial-gradient(transparent 40%, #444444 42%), url(../image/img640x480-1.png);
+  background-image: linear-gradient(90deg, #a6a6a6, #737373), radial-gradient(transparent 40%, #444444 42%), radial-gradient(transparent 40%, #444444 42%), url(../image/img640x480-1.png);
+  background-blend-mode: color-burn;
+}
+
+@-webkit-keyframes slide-9 {
+  from {
+    background-position: -5rem center, top, bottom, -45rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -95rem center;
+  }
+}
+
+@keyframes slide-9 {
+  from {
+    background-position: -5rem center, top, bottom, -45rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -95rem center;
+  }
+}
+
+.carousel__slice:nth-child(10) {
+  -webkit-transform: rotateY(45deg);
+          transform: rotateY(45deg);
+  background-position: -5rem center, top, bottom, -50rem center;
+  -webkit-animation: slide-10 10s infinite;
+          animation: slide-10 10s infinite;
+  background-image: -webkit-gradient(linear, left top, right top, from(#737373), to(#333333)), radial-gradient(transparent 40%, #2b2b2b 42%), radial-gradient(transparent 40%, #2b2b2b 42%), url(../image/img640x480-1.png);
+  background-image: linear-gradient(90deg, #737373, #333333), radial-gradient(transparent 40%, #2b2b2b 42%), radial-gradient(transparent 40%, #2b2b2b 42%), url(../image/img640x480-1.png);
+  background-blend-mode: color-burn;
+}
+
+@-webkit-keyframes slide-10 {
+  from {
+    background-position: -5rem center, top, bottom, -50rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -100rem center;
+  }
+}
+
+@keyframes slide-10 {
+  from {
+    background-position: -5rem center, top, bottom, -50rem center;
+  }
+  to {
+    background-position: -5rem center, top, bottom, -100rem center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .carousel {
+    height: 70rem;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+/*# sourceMappingURL=carousel.css.map */
